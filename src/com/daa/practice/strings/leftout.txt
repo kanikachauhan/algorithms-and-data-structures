@@ -1,3 +1,4 @@
 https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
 https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
 removeConsecutiveVowels
+https://www.geeksforgeeks.org/check-strings-rotations-not-set-2/ (other way)
