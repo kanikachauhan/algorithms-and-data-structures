@@ -2,3 +2,5 @@ https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
 https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
 removeConsecutiveVowels
 https://www.geeksforgeeks.org/check-strings-rotations-not-set-2/ (other way)
+https://www.geeksforgeeks.org/print-all-permutations-with-repetition-of-characters/
+https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
