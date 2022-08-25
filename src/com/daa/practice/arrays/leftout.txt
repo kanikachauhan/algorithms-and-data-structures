@@ -1,8 +1,7 @@
 https://www.geeksforgeeks.org/rotate-matrix-elements/
 https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/
 
---
+-- 
 https://www.geeksforgeeks.org/find-distinct-elements-common-rows-matrix/
-https://www.geeksforgeeks.org/swap-major-minor-diagonals-square-matrix/
-https://www.geeksforgeeks.org/check-given-matrix-is-magic-square-or-not/
 https://www.geeksforgeeks.org/common-elements-in-all-rows-of-a-given-matrix/
+https://www.geeksforgeeks.org/swap-major-minor-diagonals-square-matrix/

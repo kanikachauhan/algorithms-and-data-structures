@@ -81,6 +81,54 @@ public class MatrixTest {
 		assertEquals(List.of(2,7,8,15,25), matrix.findUniqueElements(mat));
 	}
 	
+	@Test
+	public void testAddMatrices() {
+		int mat1[][] = { {1, 1, 1, 1},{2, 2, 2, 2},{3, 3, 3, 3},{4, 4, 4, 4}};
+		int mat2[][] = { {1, 1, 1, 1},{2, 2, 2, 2},{3, 3, 3, 3},{4, 4, 4, 4}};
+		int res[][] = {{2,2,2,2},{4, 4, 4, 4},{6, 6, 6, 6},{8, 8, 8, 8}};
+		assertTrue(assertMatrixEquals(res, matrix.addMatrices(mat1, mat2)));
+	}
+	
+	@Test
+	public void testSubtractMatrices() {
+		int mat1[][] = { {1, 1, 1, 1},{2, 2, 2, 2},{3, 3, 3, 3},{4, 4, 4, 4}};
+		int mat2[][] = { {1, 1, 1, 1},{2, 2, 2, 2},{3, 3, 3, 3},{4, 4, 4, 4}};
+		int res[][] = {{0,0,0,0},{0, 0, 0, 0},{0, 0, 0, 0},{0, 0, 0, 0}};
+		assertTrue(assertMatrixEquals(res, matrix.subtractMatrices(mat1, mat2)));
+	}
+	
+	@Test
+	public void testCountSortedMatrixRows() {
+		int mat[][] = { { 1, 2, 3, 4, 5 },{ 4, 3, 1, 2, 6 },{ 8, 7, 6, 5, 4 },{ 5, 7, 8, 9, 10 } };
+		assertEquals(3, matrix.countSortedMatrixRows(mat));
+	}
+	
+	@Test
+	public void testIsSparseMatrix() {
+		int mat[][] = { { 1, 0, 3 },{ 0, 0, 4 },{ 6, 0, 0 } };
+		assertTrue(matrix.isSparseMatrix(mat));
+	}
+
+	@Test
+	public void testUpperTriangularMatrix() {
+		int mat[][] = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+		int res[][] = {{1,2,3},{0,5,6},{0,0,9}};
+		assertTrue(assertMatrixEquals(res, matrix.upperTriangularMatrix(mat)));
+	}
+
+	@Test
+	public void testLowerTriangularMatrix() {
+		int mat[][] = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+		int res[][] = {{1,0,0},{4,5,0},{7,8,9}};
+		assertTrue(assertMatrixEquals(res, matrix.lowerTriangularMatrix(mat)));
+	}
+	
+	@Test
+	public void testIsMagicSquare() {
+		int mat[][] = {{ 2, 7, 6 }, { 9, 5, 1 },{ 4, 3, 8 }};
+		assertTrue(matrix.isMagicSquare(mat));
+	}
+	
 	private boolean assertMatrixEquals(int mat1[][],int mat2[][]) {
 		if(mat2==null)
 			return false;

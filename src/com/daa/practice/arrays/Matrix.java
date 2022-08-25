@@ -159,6 +159,120 @@ public class Matrix {
 		return lst;
 	}
 	
+	public int[][] addMatrices(int mat1[][],int mat2[][]){
+		int m = mat1.length;
+		int n = mat1[0].length;
+		int res[][] = new int[m][n];
+		for(int i=0;i<res.length;i++) {
+			for(int j=0;j<res[i].length;j++) {
+				res[i][j] = mat1[i][j] + mat2[i][j];
+			}
+		}
+		return res;
+	}
+	
+	public int[][] subtractMatrices(int mat1[][],int mat2[][]){
+		int m = mat1.length;
+		int n = mat1[0].length;
+		int res[][] = new int[m][n];
+		for(int i=0;i<res.length;i++) {
+			for(int j=0;j<res[i].length;j++) {
+				res[i][j] = mat1[i][j] - mat2[i][j];
+			}
+		}
+		return res;
+	}
+	
+	public int countSortedMatrixRows(int mat[][]) {
+		int m = mat.length;
+		int n = mat[0].length;
+		int count = 0;
+		for(int i=0;i<m;i++) {
+			boolean flag = true;
+			if(mat[i][0]<mat[i][1]) {
+				for(int j=1;j<n-1;j++) {
+					if(mat[i][j]>mat[i][j+1]) {
+						flag = false;
+						break;
+					}
+				}
+			}
+			if(mat[i][0]>mat[i][1]) {
+				for(int j=1;j<n-1;j++) {
+					if(mat[i][j]<mat[i][j+1]) {
+						flag = false;
+						break;
+					}
+				}
+			}
+			if(flag)
+				count++;
+		}
+		return count;
+	}
+	
+	public boolean isSparseMatrix(int mat[][]) {
+		int n = (mat.length)*(mat[0].length);
+		int h = n/2;
+		int count = 0;
+		for(int i=0;i<mat.length;i++) {
+			for(int j=0;j<mat[i].length;j++){
+				if(mat[i][j]==0)
+					count++;
+			}
+		}
+		return count>h;
+	}
+	
+	
+	public int[][] upperTriangularMatrix(int mat[][]){
+		for(int i=0;i<mat.length;i++) {
+			for(int j=0;j<mat[i].length;j++) {
+				if(i>j) {
+					mat[i][j] = 0;
+				}
+			}
+		}
+		return mat;
+	}
+	
+	public int[][] lowerTriangularMatrix(int mat[][]){
+		for(int i=0;i<mat.length;i++) {
+			for(int j=0;j<mat[i].length;j++) {
+				if(i<j) {
+					mat[i][j] = 0;
+				}
+			}
+		}
+		return mat;
+	}
+	
+	public boolean isMagicSquare(int mat[][]) {
+		int primSum = 0;
+		int secSum = 0;
+		int N = mat.length;
+		for(int i=0;i<N;i++) {
+			primSum = primSum + mat[i][i];
+			secSum = secSum + mat[i][N-i-1];
+		}
+		
+		if(primSum!=secSum)
+			return false;
+		
+		for(int i=0;i<N;i++) {
+			int rowSum = 0;
+			int colSum = 0;
+			for(int j=0;j<N;j++) {
+				rowSum = rowSum + mat[i][j];
+				colSum = colSum + mat[j][i];
+			}
+			if(rowSum!=colSum || colSum!=primSum || rowSum!=primSum || colSum!=secSum || colSum!=secSum)
+				return false;
+		}
+		
+		return true;
+	}
+	
 	private void print(int mat[][]) {
 		int m = mat.length;
 		int n = mat[0].length;
