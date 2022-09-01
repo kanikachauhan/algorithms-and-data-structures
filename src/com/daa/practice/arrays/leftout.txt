@@ -5,3 +5,7 @@ https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/
 https://www.geeksforgeeks.org/find-distinct-elements-common-rows-matrix/
 https://www.geeksforgeeks.org/common-elements-in-all-rows-of-a-given-matrix/
 https://www.geeksforgeeks.org/swap-major-minor-diagonals-square-matrix/
+
+
+https://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers/
+https://www.geeksforgeeks.org/segregate-0s-and-1s-in-an-array-by-traversing-array-once/
