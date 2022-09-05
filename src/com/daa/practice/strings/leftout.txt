@@ -4,3 +4,10 @@ removeConsecutiveVowels
 https://www.geeksforgeeks.org/check-strings-rotations-not-set-2/ (other way)
 https://www.geeksforgeeks.org/print-all-permutations-with-repetition-of-characters/
 https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+
+https://www.geeksforgeeks.org/difference-of-two-large-numbers/
+https://www.geeksforgeeks.org/sum-two-large-numbers/
+https://www.geeksforgeeks.org/check-given-string-sum-string/
+
+https://www.geeksforgeeks.org/count-distinct-subsequences/
+https://www.geeksforgeeks.org/count-gfg-subsequences-given-string/
