@@ -9,3 +9,6 @@ https://www.geeksforgeeks.org/swap-major-minor-diagonals-square-matrix/
 
 https://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers/
 https://www.geeksforgeeks.org/segregate-0s-and-1s-in-an-array-by-traversing-array-once/
+
+
+https://www.geeksforgeeks.org/find-the-first-missing-number/

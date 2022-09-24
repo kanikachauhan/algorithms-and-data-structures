@@ -3,7 +3,7 @@ https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-al
 removeConsecutiveVowels
 https://www.geeksforgeeks.org/check-strings-rotations-not-set-2/ (other way)
 https://www.geeksforgeeks.org/print-all-permutations-with-repetition-of-characters/
-https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+
 
 https://www.geeksforgeeks.org/difference-of-two-large-numbers/
 https://www.geeksforgeeks.org/sum-two-large-numbers/
@@ -11,3 +11,11 @@ https://www.geeksforgeeks.org/check-given-string-sum-string/
 
 https://www.geeksforgeeks.org/count-distinct-subsequences/
 https://www.geeksforgeeks.org/count-gfg-subsequences-given-string/
+
+https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/
+
+#TODO
+https://www.geeksforgeeks.org/put-spaces-words-starting-capital-letters/
+https://www.geeksforgeeks.org/remove-extra-spaces-string/
+https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/
+https://www.geeksforgeeks.org/urlify-a-given-string-replace-spaces-with-%20/
